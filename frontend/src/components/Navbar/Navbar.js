@@ -48,21 +48,17 @@ const Nav = () => {
                 auth ?
                     // show options to loged in player only
                     <ul className='nav-ul'>
-                        <li id='eventHead' ><Link to='/'>Technical Tambola MUACM</Link></li>
+                        <li id='eventHead' ><Link to='/'>Technical Tambola ACM-BU</Link></li>
                         <li>
                             <button id='logout' >
-                                <Link onClick={logout} to='/login'>Logout ({JSON.parse(auth).name})</Link>
+                                <Link onClick={logout} to='/login'>Logout</Link>
                             </button>
-                        </li>
-                        <li id='handRaise'>
-                            {/* get user name and time when someone calm for prize by clicking on button  */}
-                            <button id='handRaiseButton' onClick={(e) => RaiseHand(e)} type='button'>✋</button>
                         </li>
                     </ul>
                     :
                     <ul className='nav-ul nav-right'>
                         <li>
-                            <a href="https://medicaps.acm.org/index/">MUACM</a>
+                            <a href="https://medicaps.acm.org/index/">ACM-BU</a>
                         </li>
                     </ul>
             }

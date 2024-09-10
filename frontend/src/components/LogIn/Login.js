@@ -34,6 +34,7 @@ const Login = () => {
 
   return (
     <div className="login">
+      <div className="card">
       <h1 id="eventName">Technical Tambola</h1>
 
       <h1 id="login">Log In</h1>
@@ -44,7 +45,7 @@ const Login = () => {
         type="text"
         value={user}
         onChange={(e) => setUser(e.target.value)}
-        placeholder="Enter User ID"
+        placeholder="Enter Name"
       />
 
       {/* take password and store it in password state */}
@@ -60,6 +61,7 @@ const Login = () => {
       <button onClick={handlelogin} className="button" type="button">
         Login
       </button>
+      </div>
     </div>
   );
 };

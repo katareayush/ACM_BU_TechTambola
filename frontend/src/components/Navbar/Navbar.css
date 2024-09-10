@@ -1,3 +1,17 @@
+.nav{
+    background-color: #252525;
+    width: full;
+}
+
+.nav-ul {
+    padding: 15px;
+    margin: 0;
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-ul li {
     display: inline-block;
     padding: 10px;
@@ -7,12 +21,6 @@
     color: #fff;
     padding: 5px;
     text-decoration: none;
-}
-
-.nav-ul {
-    padding: 15px;
-    margin: 0;
-    background-color: #252525;
 }
 
 .nav-right {
@@ -32,6 +40,10 @@
     background-color: transparent;
     border-color: #fff;
     border-radius: 10px;
+}
+
+.logout-container {
+    margin-left: auto;
 }
 
 #handRaiseButton {

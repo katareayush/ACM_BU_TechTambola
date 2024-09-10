@@ -18,13 +18,27 @@ body {
 }
 
 .login {
-    margin-left: 30%;
-    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(120px);
+    margin: 12px;
+    
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 3%;
+    box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.5);
+    
+
+    
 }
 
 #eventName {
     font-size: 4rem;
-    margin-top: -50px;
+    margin-top: 12px;
 }
 
 #eventHead {
