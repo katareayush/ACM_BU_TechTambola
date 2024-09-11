@@ -11,8 +11,9 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        
         <Nav />
-
+        
         <Routes>
 
           {/* routes for Private Components */}
@@ -21,6 +22,8 @@ export default function App() {
         </Routes>
 
       </BrowserRouter>
+      
     </div>
+   
   );
 }
