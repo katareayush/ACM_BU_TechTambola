@@ -22,11 +22,12 @@ const Login = () => {
   const handlelogin = async () => {
     const randomId = Math.floor(Math.random() * 100) + 1; // Generate random integer between 1 and 100
     const result = { id: randomId };
+    
     if ("ACM MEMBER") {
       //if user is verified then store it in localstorage
       localStorage.setItem("user", JSON.stringify(result));
       //navigate to ticket
-      navigate("/");
+      navigate("/ticket");
     } else {
       alert("Please enter correct details...");
     }

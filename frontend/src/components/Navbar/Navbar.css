@@ -1,6 +1,15 @@
 .nav{
     background-color: #252525;
-    width: full;
+    
+
+}
+
+button{
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .nav-ul {
@@ -66,8 +75,12 @@
         margin-top: 10px;
     }
 
+    .nav{
+        width: max-content;
+    }
     .nav-ul {
         padding: 26px;
+        
     }
 
     .login {

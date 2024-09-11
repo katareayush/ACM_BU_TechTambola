@@ -8,10 +8,7 @@ const Nav = () => {
     const auth = localStorage.getItem('user'); 
     const navigate = useNavigate();
 
-    const logout = () => {
-        localStorage.clear();
-        navigate('/login');
-    }
+    
 
     function RaiseHand(e) {
 
@@ -43,7 +40,7 @@ const Nav = () => {
                         <li id='eventHead' ><Link to='/'>Technical Tambola ACM-BU</Link></li>
                         <li>
                             <button id='logout' >
-                                <Link onClick={logout} to='/login'>Logout</Link>
+                                <button onClick={()=> navigate("/")} >Logout</button>
                             </button>
                         </li>
                     </ul>
